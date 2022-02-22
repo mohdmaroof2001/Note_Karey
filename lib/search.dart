@@ -2,7 +2,6 @@ import 'package:flutter/material.dart';
 import 'package:flutter_slidable/flutter_slidable.dart';
 import 'package:jiffy/jiffy.dart';
 import 'package:me_note/add_&_edit.dart';
-import 'package:me_note/colorsclass.dart';
 import 'package:me_note/sqlite_dphelper.dart';
 
 class SearchUI extends StatefulWidget {
