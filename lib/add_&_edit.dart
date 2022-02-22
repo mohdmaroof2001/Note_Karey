@@ -48,9 +48,7 @@ class _Add_and_EditState extends State<Add_and_Edit> {
                         'date': date.toString()
                       },
                       'id = ?',
-                      [
-                        widget.data != ['id']
-                      ]);
+                      [widget.data!['id']]);
                   print("Update count $updateId");
                   Navigator.pop(context, "update");
                   ScaffoldMessenger.of(context)
@@ -62,7 +60,7 @@ class _Add_and_EditState extends State<Add_and_Edit> {
                     'body': description.text,
                     'date': date.toString()
                   });
-                  print("Update count $insertId");
+                  print("Add count $insertId");
                   Navigator.pop(context, "add");
                   ScaffoldMessenger.of(context)
                       .showSnackBar(SnackBar(content: Text("Save Notes")));

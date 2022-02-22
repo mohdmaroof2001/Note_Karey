@@ -55,7 +55,7 @@ class _Note_DashbordState extends State<Note_Dashbord> {
         padding:
             const EdgeInsets.only(top: 20, left: 20, right: 20, bottom: 20),
         child: dataArr.isEmpty
-            ? Expanded(
+            ? Container(
                 child: ListView(
                   children: [
                     SizedBox(height: 100),
