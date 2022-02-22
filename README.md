@@ -1,10 +1,12 @@
 # Note_Karey
+
 ![Screenshot_1645510253](https://user-images.githubusercontent.com/91772027/155073808-a4227be4-abd7-4059-9dca-3808319dfdfd.png)
+
+![Screenshot_1645510270](https://user-images.githubusercontent.com/91772027/155074335-0f1a7d17-e2fa-477f-b1f2-1799592c2f4d.png)
+
+![Screenshot_1645510326](https://user-images.githubusercontent.com/91772027/155074345-fb9c4c4b-69e7-4ea6-9d60-888fe55a5828.png)
+
 ![Screenshot_1645510387](https://user-images.githubusercontent.com/91772027/155073833-96cebae5-3688-40cb-b17c-be6b06f0f587.png)
-5.png)
--02221b1e32bb.png)
-
-
 
 A new Flutter project.
 
