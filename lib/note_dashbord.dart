@@ -20,11 +20,11 @@ class Note_Dashbord extends StatefulWidget {
 class _Note_DashbordState extends State<Note_Dashbord> {
   List<Map<String, dynamic>> dataArr = [];
   List<Color> randomcolors = [
-    Color.fromARGB(255, 253, 153, 255),
-    Color.fromARGB(255, 255, 158, 158),
-    Color.fromARGB(255, 145, 244, 143),
-    Color.fromARGB(255, 255, 245, 153),
     Color.fromARGB(255, 158, 255, 255),
+    Color.fromARGB(255, 255, 245, 153),
+    Color.fromARGB(255, 145, 244, 143),
+    Color.fromARGB(255, 255, 158, 158),
+    Color.fromARGB(255, 253, 153, 255),
   ];
 
   @override
@@ -70,8 +70,10 @@ class _Note_DashbordState extends State<Note_Dashbord> {
                   ],
                 ),
               )
-            : ListView.separated(
+            : ListView.builder(
                 physics: BouncingScrollPhysics(),
+                reverse: false,
+                shrinkWrap: true,
                 itemCount: dataArr.length,
                 itemBuilder: ((context, indexNO) {
                   Map<String, dynamic> data = dataArr[indexNO];
@@ -122,7 +124,7 @@ class _Note_DashbordState extends State<Note_Dashbord> {
                               )
                             ]),
                         child: Container(
-                          width: MediaQuery.of(context).size.width,
+                          // width: MediaQuery.of(context).size.width,
                           height: 80,
                           decoration: BoxDecoration(
                               borderRadius: BorderRadius.circular(15),
@@ -177,9 +179,6 @@ class _Note_DashbordState extends State<Note_Dashbord> {
                     ),
                   );
                 }),
-                separatorBuilder: (context, indexNo) {
-                  return SizedBox();
-                },
               ),
       ),
       floatingActionButton: FloatingActionButton(
@@ -195,7 +194,7 @@ class _Note_DashbordState extends State<Note_Dashbord> {
           size: 35,
         ),
         backgroundColor: Color.fromRGBO(40, 40, 40, 5),
-        elevation: 20,
+        elevation: 8,
       ),
     );
   }

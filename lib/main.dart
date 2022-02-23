@@ -1,12 +1,18 @@
+// import 'package:device_preview/device_preview.dart';
+import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:me_note/note_dashbord.dart';
 import 'package:me_note/sqlite_dphelper.dart';
+import 'package:flutter/services.dart';
+import 'package:path/path.dart';
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
+  SystemChrome.setPreferredOrientations(
+      [DeviceOrientation.portraitUp, DeviceOrientation.portraitDown]);
 
   await DbHelper.instance.database;
-  runApp(const MyApp());
+  runApp(MyApp());
 }
 
 class MyApp extends StatelessWidget {
@@ -17,7 +23,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      title: 'Apna Notes',
+      title: 'Note Karey',
       theme: ThemeData(
 
           // primarySwatch: Colors.blue,

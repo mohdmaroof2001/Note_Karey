@@ -173,7 +173,7 @@ class _SearchUIState extends State<SearchUI> {
                                       )
                                     ]),
                                 child: Container(
-                                  width: MediaQuery.of(context).size.width,
+                                  // width: MediaQuery.of(context).size.width,
                                   height: 80,
                                   decoration: BoxDecoration(
                                       borderRadius: BorderRadius.circular(15),
